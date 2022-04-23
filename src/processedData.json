@@ -104,19 +104,21 @@
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "Usually, we solve problems by thinking: “How do we get from here to the end goal?”\n\n- Ex: How do we go from $10K in annual profits to $25K in annual profits.\n\nThe issue is that there are many paths to go forward. It’s hard to choose one. \n\nSo, ask: **“Assume we had reached the end goal. What would it have taken to get there?”**\n\n- Ex: Assume we had gotten $25K in annual profits. What would it taken to get there? Well, given our margins, it’d probably take around $150K in sales.\n\nThen, **keep asking that question to work backwards at every step.**\n\n- $25K in profits? Need $150K in sales.\n- $150K in sales? Need to get 4x as many customers to sign up for our trial.\n- 4x more signups? Need to get the signup button right at the top of our website. Or add a referrals process for existing customers. Or ...\n\nThis is **especially helpful when you have defined end goals / timelines.** Ex: As an employee at any company."
+    "Detailed": "Ask: “Assume we had reached the end goal. What would it have taken to get there? And the step before that? And the step before that? ...” Especially helpful when you have defined end goals/deadlines.",
+    "Example": "How to get $25K in profits? Need $150K in sales. $150K in sales? Need to get 4x as many customers to sign up for our trial. 4x as many signups? Need..."
   },
   {
-    "Name": "nth Order Effects - Predict Outcome of Ideas",
-    "Description": "Useful to compare the impact of ideas.",
+    "Name": "nth Order Effects",
+    "Description": "Predict the Effects of Ideas",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "Let’s say you have to get more members at your club. You have two ideas: put up flyers around your school or ask existing club members for referrals. But **you don’t know which idea to pick.**\n\nSo **ask: “What would happen if we did X?” And repeat.** Ex: 3-5 times. \n\n1. I put up flyers around the school —> less than 20% of students passing by notice —> less than 20% of students who notice come to this week’s meeting —> the flyers get taken down after a week.\n2. I ask existing club members for referrals —> less than 30% invite friends to join —> less than 60% of friends asked come —> I ask those newcomers for referrals. \n\nThe effects of the secod option seem more promising.\n\n*Note: In the above example, I made some estimates. You can also do research to make your predictions"
+    "Detailed": "Ask: “What would happen if we did X?” And repeat. Ex: 3-5 times.",
+    "Example": "How to get more members at your school club? Put up flyers or ask existing club members for referrals?\n1. I put up flyers around the school —> less than 20% of students passing by notice —> less than 20% of students who notice come to this week’s meeting —> the flyers get taken down after a week.\n2. I ask existing club members for referrals —> less than 30% invite friends to join —> less than 60% of friends asked come —> I ask those newcomers for referrals. Seems better."
   },
   {
-    "Name": "Dictionary Brainstorming - Get New Ideas Fast",
+    "Name": "Dictionary Brainstorming",
     "Description": "Useful for getting unstuck/changing directions. ",
     "Tags": [
       "Problem-Solving",
