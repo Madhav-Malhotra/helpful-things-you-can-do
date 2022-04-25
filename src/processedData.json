@@ -162,57 +162,68 @@
     ]
   },
   {
-    "Name": "Analogy - Copy, Paste Solutions :D",
-    "Description": "Use others’ solutions for your problems!",
+    "Name": "Analogy",
+    "Description": "Solving problems with others' solutions",
     "Tags": [
       "Problem-Solving"
     ],
-    "Detailed": "It’s pretty simple!\n\n1. Write down information on your problem. \n2. Identify similar problems that already have solutions.\n3. See if you can reuse other solutions for your problem.\n\nExample: \n\n1. Let’s say you’re making baseballs. Your baseballs are too brittle. Their fabric breaks when hit.\n2. Similar problems are bowling balls, basketballs, and tennis balls breaking. Basketballs and tennis balls are kept from breaking by having an inner lining of rubber. \n3. What if we could have multilayered baseballs? A lining of rubber surrounded by fabric."
+    "Detailed": "1. Write down information on your problem. \n2. Identify similar problems that already have solutions.\n3. Try to reuse other solutions for your problem.",
+    "Example": "1. Problem - You make baseballs that are too brittle. Their fabric breaks when hit.\n2. Similar problems - how to stop bowling balls, basketballs, and tennis balls from breaking? Having an inner lining of rubber for basketballs/tennis balls. \n3. What if we could have multilayered baseballs? A lining of rubber surrounded by fabric?"
   },
   {
-    "Name": "ROE - What to do AFTER Brainstorming",
-    "Description": "Useful when it’s hard to decide what to do next.",
+    "Name": "ROE",
+    "Description": "What to do AFTER brainstorming",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "What to do AFTER brainstorming?\n\n1. **R**est. Make a video explaining each idea in your own words (for later). Then, leave the ideas for a few hours at least.\n    1. If in teams, get people to say each other’s ideas. Everyone should be on the same page.\n2. **O**rganise. Cluster ideas. Try to find 2 or more groups. Put ideas on a spectrum. From most [adjective] to least [adjective].\n    1. If you need more ideas, fill in gaps on one spectrum/cluster (ex: \"What could be even more [adjective]? How else could we get [cluster topic]?\")\n3. **E**valuate. This is where the ‘decision’ happens.\n    1. Find the most neglected ideas. Ask: \"If we didn't do this, would someone else?\"\n    2. Find the most feasible ideas. Ask: \"In one week's work, which ideas could we get closest to implementing?\"\n    3. Find the most impactful ideas. Ask: \"What's the expected value (likelihood of success x the benefit of success)?\" See which ideas fit into multiple of the above categories."
+    "Detailed": "1. Rest - Each team member explains each idea - on video, in their own words. Then, wait 1+ hour(s).\n2. Organise - Cluster ideas into 2+ groups. Put ideas on a spectrum. From most [adjective] to least [adjective]. Fill in gaps in a spectrum/cluster (ex: 'What could be even more [adjective]? What else is like [cluster topic]?')\n3. Evaluate - Find the most NEGLECTED ideas. Ask: 'If we didn't do this, would someone else?' Find the most FEASIBLE ideas. Ask: 'In one week's work, which ideas could we get closest to implementing?' Find the most IMPACTFUL ideas. Ask: 'What's the likelihood of success and the results of success?' Any overlaps?"
   },
   {
-    "Name": "5 Whys - Who Started It?",
-    "Description": "Find the ROOT of the problem instead of its symptoms",
+    "Name": "5 Whys",
+    "Description": "Find the UNDERLYING issue",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "5 Whys can be as simple as **asking 'Why?' five times!**\n\n1. Write down the problem. Try organising all the data you have on it as [‘causes’ and ‘effects’](https://www.juran.com/blog/the-ultimate-guide-to-cause-and-effect-diagrams/). \n2. Ask 'Why did [problem] happen?'\n3. Write down the cause - ie. the new problem\n4. Repeat steps 2 and 3 with the new problems. \n5. Stop when you find a problem specific and clear enough to solve.\n\nExample:\n\n1. I didn’t feel happy during my call with Bob Smith. Why?\n2. I felt very self-conscious, so I felt awkward. Why? \n3. Bob Smith often paused while talking and I was distracted by worries about what he thinks of me in the meantime. Why?\n4. It’s very important to me to please others. Why?\n5. I worry that if I don’t please others, they won’t want to be friends with me anymore. Why?\n6. Growing up, I had lots of friendships that ended quickly. So I don’t know what it’s like to have longterm friends."
+    "Detailed": "1. Write down the problem. Try organising the data you have on it as causes vs. effects. \n2. Ask 'Why did [problem] happen?' Write the cause.\n3. Repeat steps 2 and 3 with the causes (underlying problems). \n4. Stop when you find a problem specific/clear enough to solve.",
+    "Example": "1. I didn’t feel happy during my call with Bob Smith. Why?\n2. I felt very self-conscious, so I felt awkward. Why? \n3. Bob Smith often paused while talking and I was distracted by worries about what he thinks of me in the meantime. Why?\n4. It’s very important to me to please others. Why?\n5. I worry that if I don’t please others, they won’t want to be friends with me anymore. Why?\n6. Growing up, I had lots of friendships that ended quickly. So I don’t know what it’s like to have longterm friends.",
+    "Related Links": [
+      {
+        "link": "https://www.juran.com/blog/the-ultimate-guide-to-cause-and-effect-diagrams/",
+        "text": "How to make cause-effect diagrams"
+      }
+    ]
   },
   {
-    "Name": "U-Curves - Do Just Enough",
-    "Description": "Useful to reduce perfectionism.",
+    "Name": "Goldilocks Question",
+    "Description": "How to reduce perfectionism",
     "Tags": [
       "Reflections",
       "Work"
     ],
-    "Detailed": "Before starting a project (or whenever you feel stuck), ask: **'What’d be too little, too much, and just right?'**\n\nMore visually, try drawing a diagram like this:\n\n![New Project.png](U-Curves%20-%208499a/New_Project.png)"
+    "Detailed": "Before starting a project (or whenever stuck), ask: 'What’d be too little, too much, and just right?'",
+    "Example": "How much work to put into this article? It'd be too little to just leave some parts in bullet notes. It'd be too much to set up calls with experts to get quotes. It'd be just right to reformat the bullet notes into paragraphs + bold the important parts."
   },
   {
-    "Name": "Prerequisites - Focus on Essentials",
-    "Description": "Find neglected areas of work amidst hype.",
+    "Name": "Prerequisites",
+    "Description": "Find neglected areas of work amidst hype",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "When you think X area of work will be a future opportunity - don’t work on X. Ask: **'What are the pre-requisites needed to enable X?** Are they currently fulfilled?' Then, **work on the pre-requisites that aren’t fulfilled**. \n\nExample: Plant-based meats in developing countries will be a future opportunity. What are the pre-requisites needed to enable them? \n\n- Well, one is the plant-based proteins needed to make them.\n- Another is cold storage to keep them fresh before consumers buy them.\n\nAre these currently fulfilled? \n\n- No - in developing countries, food is more often sold in informal marketplaces than formal retailers. These informal marketplaces often lack cold storage to store food long-term.\n\nSo, work on developing cold storage in informal marketplaces in developing countries to store food long-term."
+    "Detailed": "When you think X work will be important in the future - don’t work on X. Ask: 'What are the pre-requisites needed to enable X? Are they currently fulfilled?' Then, work on the pre-requisites that aren’t fulfilled.",
+    "Example": "Plant-based meats in developing countries will be important. What are the pre-requisites needed to enable them? \nPlant-based proteins needed to make them and cold storage to keep them fresh before consumers buy them.\nAre these currently fulfilled?\n No. Food is currently sold in informal marketplaces over formal retailers. Cold storage to store food long-term is rare.\nSo, work on developing cold storage in informal marketplaces in developing countries to store food long-term."
   },
   {
-    "Name": "Gradient Descent - Next Small Step",
+    "Name": "Gradient Descent",
     "Description": "Solve problems with tiny iterations.",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "In gradient descent, we **focus on JUST the next best step** in solving a problem. And keep iterating with whatever seems to be the best next step each time. \n\n- This is **useful for problems that are hard to analyse fully**. Ex: Quickly stopping the spread of a novel virus. Ex: Playing chess rapidly. Ex: Fixing soil acidification in a province. In other words, problems where: you’re missing information, have time constraints, don’t have a controlled environment, have lots of uncertainty.\n- Note: **Expect to repeat this several times.** You have to iterate for small steps to add up.\n- Note: **Be careful how you measure progress.** You need to choose the right metric, otherwise you won’t choose the a good next step. Ex: You want to reduce soil acidification in a province and you only measure soil acidity in urban cities. Then, you might take next steps that only work in urban cities, not rural areas."
+    "Detailed": "Focus on just the NEXT BEST STEP in solving a problem. And repeat this SEVERAL times.\nEspecially useful for problems with missing information, time constraints, uncontrolled environments, and uncertainty.",
+    "Example": "How to reduce soil acidification in a province? Start by putting acidification sensors in samples of land with different degrees of rurality, different geologies, and different precipitation levels. THEN, for the worst affected areas..."
   },
   {
     "Name": "Trial and Error",
