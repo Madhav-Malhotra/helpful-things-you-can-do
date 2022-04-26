@@ -1,9 +1,17 @@
+import React, { useState } from "react";
+import { data } from "./processedData.js";
+import Card from "./components/Card.js";
 import './App.css';
 
 function App() {
+  const [num, setNum] = useState(0);
+
+  const handleNewTip = () => setNum(num+1);
+
   return (
     <div className="App">
-      Test
+      <Card {...data[num]} />
+      <button onClick={handleNewTip}>New Tip</button>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-[
+export const data = [
   {
     "Name": "TWIG-H Questions",
     "Description": "5 questions specifically to gain empathy",
