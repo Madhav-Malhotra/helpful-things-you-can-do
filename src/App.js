@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App">
       <Card {...data[num]} />
-      <button onClick={handleNewTip}>New Tip</button>
+      <button className="next-card" onClick={handleNewTip}>New Tip</button>
     </div>
   );
 }
