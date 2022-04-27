@@ -1,8 +1,10 @@
 div.App {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   height: 97vh;
-  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
 }
 
 div.Card {
@@ -26,8 +28,15 @@ div.Card h1 {
   margin-top: 0;
 }
 
-button.next-card {
-  max-width: 600px;
-  margin: 20px auto;
-  padding: 0 25px;
+div.App img.arrow {
+  max-width: 45px;
+  max-height: 45px;
+  padding: 0 10px;
+  opacity: 0.6;
+  transition: 0.6s;
+}
+
+div.App img.arrow:hover {
+  opacity: 1;
+  cursor: pointer;
 }

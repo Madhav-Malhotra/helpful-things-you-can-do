@@ -6,12 +6,18 @@ import './App.css';
 function App() {
   const [num, setNum] = useState(0);
 
-  const handleNewTip = () => setNum(num+1);
+  const handleNewTip = (i) => {
+    let index = num+i;
+    if (index >= data.length) index = 0;
+    if (index < 0) index = data.length - 1;
+    setNum(index);
+  };
 
   return (
     <div className="App">
+      <img className="arrow" onClick={() => handleNewTip(-1)} src="./leftArrow.png" />
       <Card {...data[num]} />
-      <button className="next-card" onClick={handleNewTip}>New Tip</button>
+      <img className="arrow" onClick={() => handleNewTip(1)} src="./rightArrow.png" />
     </div>
   );
 }

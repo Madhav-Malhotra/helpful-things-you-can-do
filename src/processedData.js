@@ -5,7 +5,9 @@ export const data = [
     "Tags": [
       "Relationships"
     ],
-    "Detailed": "1. Time - 'What 3-5 things take up most of your time these days?'\n2. Worries - 'What are some worries on your mind right now?'\n3. Influences - 'What/who are you learning from? Books, mentors, whatever.'\n4. Goals - 'What are you working towards in the next few months?'\n5. Happiness - 'What’s been making you happy these days?'"
+    "Detailed": "1. Time - 'What 3-5 things take up most of your time these days?'\n2. Worries - 'What are some worries on your mind right now?'\n3. Influences - 'What/who are you learning from? Books, mentors, whatever.'\n4. Goals - 'What are you working towards in the next few months?'\n5. Happiness - 'What’s been making you happy these days?'",
+    "Rating": 3,
+    "ReviewNumber": 1
   },
   {
     "Name": "Identify, Plan, Reflect",

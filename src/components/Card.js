@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Review from './Review';
+import Tags from './Tags';
 
 export default function Card(props) {
   const [detail, setDetail] = useState(false);
@@ -8,11 +10,12 @@ export default function Card(props) {
     content = (<div>
       <h1>{props.Name}</h1>
       <h3>{props.Description}</h3>
-      <p>{JSON.stringify(props.Tags).replace(/[[\]"]/g, '')}</p>
-      {props.ReviewNumber ? <p>User rating: {props.Rating}/5 ({props.ReviewNumber})</p> : ""}
+      <Tags Tags={props.Tags}/>
+      <Review ReviewNumber={props.ReviewNumber} Rating={props.Rating} />
     </div>);
   } else {
     content = (<div>
+      <h3>{props.Description}</h3>
       <p className="detail">{props.Detailed}</p>
     </div>)
   }
