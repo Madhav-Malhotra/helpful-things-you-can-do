@@ -1,29 +1,22 @@
-import React, { useState } from 'react';
-import Review from './Review';
-import Tags from './Tags';
+import React, { useEffect, useState } from 'react';
+import CardBody from './CardBody';
+import ExtraInfo from './ExtraInfo';
 
 export default function Card(props) {
-  const [detail, setDetail] = useState(false);
-  let content;
+  const [showDetail, setShowDetail] = useState(false);
+  const {Name, Description, Tags, ReviewNumber, Rating, RelatedLinks, Example, Detailed} = props;
+  const info = {Name, Description, Tags, ReviewNumber, Rating, showDetail, Detailed};
 
-  if (!detail) {
-    content = (<div>
-      <h1>{props.Name}</h1>
-      <h3>{props.Description}</h3>
-      <Tags Tags={props.Tags}/>
-      <Review ReviewNumber={props.ReviewNumber} Rating={props.Rating} />
-    </div>);
-  } else {
-    content = (<div>
-      <h3>{props.Description}</h3>
-      <p className="detail">{props.Detailed}</p>
-    </div>)
-  }
+  const toggle = () => setShowDetail(d => !d);
+  useEffect(toggle, [props.Detailed]);
 
   return (
-    <div className='Card'>
-      {content}
-      <button onClick={() => setDetail(!detail)}>{detail ? "Hide Details" : "Show Details"}</button>
+    <div className='info-holder'>
+      <div className='Card'>
+        <CardBody {...info}/>
+        <button onClick={toggle}>{showDetail ? "Hide Details" : "Show Details"}</button>
+      </div>
+      {showDetail ? <ExtraInfo RelatedLinks={RelatedLinks} Example={Example}/> : null}
     </div>
   )
 }

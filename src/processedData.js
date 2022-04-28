@@ -16,7 +16,7 @@ export const data = [
       "Reflections"
     ],
     "Detailed": "1. Identify the problem - *ask* others: 'What are the ways I can grow in [area]?' Also, *write* down the problem\n2. Plan a solution - have SMART goals. See link below. \n3. Reflect on whether the solution worked - track *multiple attempts* at using your solution. Any improvements?",
-    "Related Links": [
+    "RelatedLinks": [
       {
         "link": "https://www.atlassian.com/team-playbook/plays/5-whys",
         "text": "Use root causes to better identify the problem"
@@ -54,7 +54,7 @@ export const data = [
     ],
     "Detailed": "1. Context - *write* the specifics of the current event.\n2. Insight - what’s the general lesson? What realisation did you have?\n3. Action - how can you ACT on this lesson? Set a SMART goal (see link below)",
     "Example": "1. Context - Felt tired of cold-emailing experts. No results. Still, forced myself to send 4 emails on Monday so that people could respond over the week. 2/4 responded the same day.\n2. Insight - I need to go against my gut when doing work with early effort, late rewards.\n3. Action - Next week, schedule work so I do things that require others' input at start of week.",
-    "Related Links": [
+    "RelatedLinks": [
       {
         "link": "https://www.mindtools.com/pages/article/smart-goals.htm",
         "text": "How to make SMART goals"
@@ -79,7 +79,7 @@ export const data = [
     ],
     "Detailed": "1. Identify your values. See link below. \n2. Ask: 'Based on my values, what makes sense for me to always be doing?'\n 3. Set a short-term SMART goal based on that (see link below)",
     "Example": "1. I value resourcefulness. \n2. If I value resourcefulness, it makes sense for me to always be learning new skills. Like programming. 3. I'll start a course on AI by Andrew Ng and finish the first module this weekend.",
-    "Related Links": [
+    "RelatedLinks": [
       {
         "link": "PLACEHOLDER",
         "text": "Identifying values"
@@ -156,7 +156,7 @@ export const data = [
     ],
     "Detailed": "1. Write information on the specific problem.\n2. Remove any information you can before the problem is unrecognisable.\n3. Solve the general problem with any other problem-solving method.\n4. Ask: 'How can we reuse the general solution in this specific case?'",
     "Example": "1. Specific - How to convince 1000 people to install a solar panel? It costs $4000, takes 5 years to be profitable, and saves 4 tonnes of CO2 per year. \n2. General - How to convince more individuals than you know to make a costly decision now that won’t benefit them for a long time, but benefits the entire community now?\n3. Solve - You use root cause analysis to find that people focus more on present losses than future gains. So you have to reduce the present cost of the decision. \n4. Apply - In this case, you can do that by having solar panel payments monthly instead of all at once. Just $68 per month, not $4000 upfront!",
-    "Related Links": [
+    "RelatedLinks": [
       {
         "link": "https://www.atlassian.com/team-playbook/plays/5-whys",
         "text": "Use root causes to better identify the problem"
@@ -190,7 +190,7 @@ export const data = [
     ],
     "Detailed": "1. Write down the problem. Try organising the data you have on it as causes vs. effects. \n2. Ask 'Why did [problem] happen?' Write the cause.\n3. Repeat steps 2 and 3 with the causes (underlying problems). \n4. Stop when you find a problem specific/clear enough to solve.",
     "Example": "1. I didn’t feel happy during my call with Bob Smith. Why?\n2. I felt very self-conscious, so I felt awkward. Why? \n3. Bob Smith often paused while talking and I was distracted by worries about what he thinks of me in the meantime. Why?\n4. It’s very important to me to please others. Why?\n5. I worry that if I don’t please others, they won’t want to be friends with me anymore. Why?\n6. Growing up, I had lots of friendships that ended quickly. So I don’t know what it’s like to have longterm friends.",
-    "Related Links": [
+    "RelatedLinks": [
       {
         "link": "https://www.juran.com/blog/the-ultimate-guide-to-cause-and-effect-diagrams/",
         "text": "How to make cause-effect diagrams"
