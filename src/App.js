@@ -1,23 +1,16 @@
 import React, { useState } from "react";
+import Filter from "./components/Filter";
+import FlipView from "./components/FlipView.js";
 import { data } from "./processedData.js";
-import Card from "./components/Card.js";
 import './App.css';
 
 function App() {
-  const [num, setNum] = useState(0);
-
-  const handleNewTip = (i) => {
-    let index = num+i;
-    if (index >= data.length) index = 0;
-    if (index < 0) index = data.length - 1;
-    setNum(index);
-  };
+  const [ tips, setTips ] = useState(data);
 
   return (
     <div className="App">
-      <img className="arrow" onClick={() => handleNewTip(-1)} src="./leftArrow.png" />
-      <Card {...data[num]} />
-      <img className="arrow" onClick={() => handleNewTip(1)} src="./rightArrow.png" />
+      <Filter data={data} setTips={setTips}/>
+      <FlipView data={tips}/>
     </div>
   );
 }

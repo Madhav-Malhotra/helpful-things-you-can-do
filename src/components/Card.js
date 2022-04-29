@@ -5,10 +5,10 @@ import ExtraInfo from './ExtraInfo';
 export default function Card(props) {
   const [showDetail, setShowDetail] = useState(false);
   const {Name, Description, Tags, ReviewNumber, Rating, RelatedLinks, Example, Detailed} = props;
-  const info = {Name, Description, Tags, ReviewNumber, Rating, showDetail, Detailed};
+  const info = {Name, Description, TagsData: Tags, ReviewNumber, Rating, showDetail, Detailed};
 
   const toggle = () => setShowDetail(d => !d);
-  useEffect(toggle, [props.Detailed]);
+  useEffect(() => setShowDetail(false), [props.Detailed]);
 
   return (
     <div className='info-holder'>

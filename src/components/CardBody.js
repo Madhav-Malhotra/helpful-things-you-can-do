@@ -3,14 +3,14 @@ import Review from './Review';
 import Tags from './Tags';
 
 export default function CardBody(props) {
-  const {showDetail, Name, Description, Tags, ReviewNumber, Rating, Detailed} = props;
+  const {showDetail, Name, Description, TagsData, ReviewNumber, Rating, Detailed} = props;
   let content;
 
   if (!showDetail) {
     content = (<div>
       <h1>{Name}</h1>
       <h3>{Description}</h3>
-      {/* This has an issue <Tags Tags={Tags}/> */}
+      <Tags TagsData={TagsData}/>
       <Review ReviewNumber={ReviewNumber} Rating={Rating} />
     </div>);
   } else {
