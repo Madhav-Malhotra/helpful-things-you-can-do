@@ -4,7 +4,7 @@ import ExtraInfo from './ExtraInfo';
 
 export default function Card(props) {
   const [showDetail, setShowDetail] = useState(false);
-  const {Name, Description, Tags, ReviewNumber, Rating, RelatedLinks, Example, Detailed} = props;
+  const {Name, Description, Tags, ReviewNumber, Rating, RelatedLinks, Example, Detailed, id} = props;
   const info = {Name, Description, TagsData: Tags, ReviewNumber, Rating, showDetail, Detailed};
 
   const toggle = () => setShowDetail(d => !d);
@@ -16,7 +16,9 @@ export default function Card(props) {
         <CardBody {...info}/>
         <button onClick={toggle}>{showDetail ? "Hide Details" : "Show Details"}</button>
       </div>
-      {showDetail ? <ExtraInfo RelatedLinks={RelatedLinks} Example={Example}/> : null}
+      {showDetail ? 
+        <ExtraInfo RelatedLinks={RelatedLinks} Example={Example}/> : 
+        <p className='label'>{id}</p>}
     </div>
   )
 }

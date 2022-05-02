@@ -4,6 +4,7 @@ import Card from "./Card.js";
 export default function FlipView(props) {
   const [num, setNum] = useState(0);
   const { data } = props;
+  const id = `Tip ${num+1} / ${data.length}`;
 
   const handleNewTip = (i) => {
     let index = num+i;
@@ -13,9 +14,9 @@ export default function FlipView(props) {
   };
 
   return (
-    <div className="Flip">
+    <div className="Flip row">
       <img className="arrow" onClick={() => handleNewTip(-1)} src="./leftArrow.png" />
-      <Card {...data[num]} />
+      <Card {...data[num]} id={id}/>
       <img className="arrow" onClick={() => handleNewTip(1)} src="./rightArrow.png" />
     </div>
   )

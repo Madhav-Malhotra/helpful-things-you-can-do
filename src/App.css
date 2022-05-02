@@ -6,7 +6,7 @@ div.App {
   display: flex;
 }
 
-div.Flip {
+div.Flip.row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,9 +22,6 @@ div.info-holder {
 div.Card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 10px;
   min-height: 200px;
   justify-content: center;
   max-width: 600px;
@@ -51,6 +48,12 @@ div.filter {
 
 /* ================ STYLING =============== */
 
+div.Card {
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 div.Card p.detail, div.extra-info p.example {
   white-space: pre-line;
 }
@@ -67,4 +70,13 @@ div.extra-info li {
 
 div.extra-info p {
   margin-bottom: 0;
+}
+
+div.filter button.active {
+  color: white;
+  background-color: #333;
+}
+
+div.info-holder p.label {
+  text-align: center;
 }

@@ -203,7 +203,7 @@ export const data = [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "1. Rest - Each team member explains each idea - on video, in their own words. Then, wait 1+ hour(s).\n2. Organise - Cluster ideas into 2+ groups. Put ideas on a spectrum. From most [adjective] to least [adjective]. Fill in gaps in a spectrum/cluster (ex: 'What could be even more [adjective]? What else is like [cluster topic]?')\n3. Evaluate - Find the most NEGLECTED ideas. Ask: 'If we didn't do this, would someone else?' Find the most FEASIBLE ideas. Ask: 'In one week's work, which ideas could we get closest to implementing?' Find the most IMPACTFUL ideas. Ask: 'What's the likelihood of success and the results of success?' Any overlaps?",
+    "Detailed": "1. Rest - Each team member explains each idea - on video, in their own words. Then, wait 1+ hour(s).\n2. Organise - Cluster ideas into 2+ groups. Put ideas on a graph. From most [adjective] to least [adjective]. Fill in gaps in a graph/cluster (ex: 'What could be even more [adjective]? What else is like [cluster topic]?')\n3. Evaluate - Find the most NEGLECTED ideas. Ask: 'If we didn't do this, would someone else?' Find the most FEASIBLE ideas. Ask: 'In one week's work, which ideas could we get closest to implementing?' Find the most IMPACTFUL ideas. Ask: 'What's the likelihood of success and the results of success?' Any overlaps?",
     "Rating": 3,
     "ReviewNumber": 1
   },
