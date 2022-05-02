@@ -1,35 +1,33 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Filter(props) {
-  const toggled = {Relationships: false, Work: false, "Problem-Solving": false, Health: false, Reflections: false};
+  const [toggle, setToggle] = useState(null);
 
   const toggleFilter = (e) => {
-    // Flip local toggle
-    let selectedCards = []; let activeToggles = []; const button = e.target.id;
-    toggled[button] = !toggled[button];
-    for (let key in toggled) {
-      if (toggled[key]) activeToggles.push(key);
-    }
+    const newToggle = e.target.id;
 
-    // If no toggles
-    if (activeToggles.length === 0) {
+    // Disable toggle
+    if (toggle && newToggle === toggle) {
+      setToggle(null);
       props.setTips(props.data);
-      return;
+      toggleStyles('');
     }
+    else {
+      setToggle(newToggle); toggleStyles(newToggle);
 
-    // Change selected cards
-    for (let tip of props.data) {
-      for (let toggle of activeToggles) {
-        if (tip.Tags.includes(toggle)) {
+      let selectedCards = [];
+      // Change selected cards
+      for (let tip of props.data) {
+        if (tip.Tags.includes(newToggle)) {
           selectedCards.push(tip);
         }
       }
+      props.setTips(selectedCards);
     }
-    props.setTips(selectedCards);
   };
 
   return (
-    <div className='filter'>
+    <div id="filter-toggle-group" className='filter'>
       <button onClick={toggleFilter} id="Relationships">Relationships</button>
       <button onClick={toggleFilter} id="Work">Work</button>
       <button onClick={toggleFilter} id="Problem-Solving">Problem-Solving</button>
@@ -37,4 +35,13 @@ export default function Filter(props) {
       <button onClick={toggleFilter} id="Reflections">Reflections</button>
     </div>
   )
+}
+
+function toggleStyles(id) {
+  const group = document.getElementById('filter-toggle-group');
+
+  for (let el of group.children) {
+    if (el.id === id) el.className = 'active';
+    else el.className = '';
+  }
 }
