@@ -15,9 +15,9 @@ export default function FlipView(props) {
 
   return (
     <div className="Flip row">
-      <img className="arrow" onClick={() => handleNewTip(-1)} src="./leftArrow.png" />
+      <img className="arrow" onClick={() => handleNewTip(-1)} src="./leftArrow.png" alt="Previous tip"/>
       <Card {...data[num]} id={id}/>
-      <img className="arrow" onClick={() => handleNewTip(1)} src="./rightArrow.png" />
+      <img className="arrow" onClick={() => handleNewTip(1)} src="./rightArrow.png" alt="Next tip"/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Filter from "./components/Filter";
-import FlipView from "./components/FlipView.js";
+import Filter from "./components/flip/Filter";
+import FlipView from "./components/flip/FlipView.js";
 import { data } from "./processedData.js";
 import './App.css';
 

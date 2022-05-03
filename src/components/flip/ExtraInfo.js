@@ -7,7 +7,7 @@ export default function ExtraInfo(props) {
   if (props.RelatedLinks) {
     links = props.RelatedLinks.map(l => 
       (<li key={l.link}>
-        <a target="_blank" href={`${l.link}`}>{l.text}</a>
+        <a target="_blank" rel="noreferrer" href={`${l.link}`}>{l.text}</a>
       </li>) 
     );
   }
