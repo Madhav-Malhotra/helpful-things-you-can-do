@@ -263,32 +263,34 @@ export const data = [
   },
   {
     "Name": "Trial and Error",
-    "Description": "What to do when you don’t know what to do",
+    "Description": "What to do when stuck",
     "Tags": [
       "Problem-Solving",
       "Work"
     ],
-    "Detailed": "Trial and error is **best used when you have NO idea what to do.** This mainly happens for situations you’ve never experienced before. \n\n- Don’t just try things at random.\n- First, **track which attempts you make + what outcome occurs.**\n- Also, **try attempts across the ‘range’ of possible events.**\n\nExample: You’re challenged to break a computer by inputting a special number that causes it to self-destruct. \n\n- Monitor any changes to the computer’s temperature, monitor display, sounds, power consumption, storage usage, and network usage after each attempt.\n- Try ‘test cases’ across the ‘range’ of possible numbers.\n- Ex: Try positive integers (1,2,3), negative integers (-1,-2,-3), zero, decimal numbers (1.234234, -2.39847), very large numbers (120873918273918273.210938, -23984792387.9837), very small numbers (0.00000000032487, -0.0000000002107), etc.",
+    "Detailed": "Use when you have NO idea what to do. Ex: problems you’ve never experienced. \nBut don’t try things randomly. Try attempts across the ‘range’ of possibilities.\nAnd track which attempts you make + what outcome occurs.",
+    "Example": "You have to break a computer by entering a special number.\nTry ‘test cases’ across the ‘range’ of possible numbers. Ex: Positive integers, negative integers, zero, decimal numbers, very large numbers, very small numbers, etc.\n Monitor changes to the computer’s temperature, monitor, sounds, power use, storage use, and network use after each attempt.",
     "Rating": 2,
     "ReviewNumber": 1
   },
   {
-    "Name": "Post-Amble - Clarify Intentions",
-    "Description": "How to reduce awkward miscommunications",
+    "Name": "Post-Amble",
+    "Description": "Reduce awkward miscommunications",
     "Tags": [
       "Relationships"
     ],
-    "Detailed": "Pre-ambles clarify what’s about to come. ‘Post-ambles’ clarify what already came 😀\n\n**At the end of any message, write/say: 'I hope this will...' to clarify your intentions.**\n\n- This is especially useful when giving feedback! So people understand you’re trying to help them, not hurt them.\n\nExample - advice on making friends:\n\n> Maybe it might be helpful to identify what kind of people you want to be around? Ie. What traits do they have? Which friend groups are they in?\n\nThen, you have a target to aim towards. And it might help to just take tiny steps towards that. Ex: Day 1: Start a conversation with one person like that. Day 2: Follow up with them over social media. Day 3: Repeat. Day 4: Ask them if they're part of any clubs with others like them. Day 5: ....\n\nI hope that might give you a practical next step that doesn't seem too out of the reach to try :-)\n>",
+    "Detailed": "At the end of any message, write/say: 'I hope this will...' to clarify your intentions.\n Especially when giving feedback! So people understand you’re trying to help, not hurt them.",
+    "Example": "Advice on making friends: Maybe it might help to ask what kind of people you like? Ie. What traits do they have? Which friend groups are they in?\n And it might help to take TINY steps to find them. Ex: Day 1: Start a conversation with one person like that. Day 2: Follow up with them over social media. Day 3: ...\n*I hope that might give you a practical next step to try :-)*",
     "Rating": 5,
     "ReviewNumber": 1
   },
   {
-    "Name": "Empathy Stops - Build Understanding",
-    "Description": "How to better understand others in conversations",
+    "Name": "Empathy Stops",
+    "Description": "Better understand others in conversations",
     "Tags": [
       "Relationships"
     ],
-    "Detailed": "Empathy is unintuitive. That’s why it requires time. \n\nDuring a conversation, **actually STOP for >5 seconds to think: 'What’s life like for them?'**\n\n- Think about their problems, their thoughts, their priorities, their incentives.\n- And what you’d be like in their position.\n- Try saying it back to them. **'It sounds like you’re [adjective] because [reason]?'**\n- Try validating their problems, thoughts, priorities, incentives, etc. 'If I were in your position, I’d also...'\n\nThis lets you create more trust/cooperative spirit.",
+    "Detailed": "During a conversation, *actually STOP* for >5 seconds to think: 'What’s life like for them?' Think about their problems, thoughts, priorities, incentives.\nTry saying it back to them. *'It sounds like you’re [adjective] because [reason]?'* Try validating them: 'If I were in your position, I’d also...'.",
     "Rating": 4,
     "ReviewNumber": 1
   },
@@ -342,6 +344,15 @@ export const data = [
     ],
     "Detailed": "\nThis is a thought experiment for thinking more objectively. Often, it’s helpful when you’re judging yourself excessively.\n\n- Imagine there’s an alien on a planet like ours. **The alien has the EXACT same problems you’re facing.** STOP to think about their thoughts, their conversations, their actions - all of which are like yours.\n- **What advice would you give to this alien who’s in the same situation as you?**\n\n*Note: if it’s too hard/abstract to visualise an alien, imagine you had a friend who had the exact same problems as you.",
     "Rating": 4,
+    "ReviewNumber": 1
+  },
+  {
+    "Name": "Context Resets",
+    "Description": "How to get unstuck with breaks.",
+    "Tags": [ "Work" ],
+    "Detailed": "Stuck on a problem? Change your environment! It's easier to remember the solution.",
+    "Example": "After 45 minutes of fixing a coding bug, stop. Go for a 5 minute walk outside.",
+    "Rating": 5,
     "ReviewNumber": 1
   }
 ]
