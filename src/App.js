@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Filter from "./components/flip/Filter";
-import FlipView from "./components/flip/FlipView.js";
+import GridView from "./components/grid/GridView";
+import Navbar from "./components/grid/Navbar";
 import { data } from "./processedData.js";
-import './App.css';
 
 function App() {
   const [ tips, setTips ] = useState(data);
 
   return (
     <div className="App">
+      <Navbar />
       <Filter data={data} setTips={setTips}/>
-      <FlipView data={tips}/>
+      <GridView tips={tips} />
     </div>
   );
 }

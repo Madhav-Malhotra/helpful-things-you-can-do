@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 
+const btnClass = "btn btn-inverse";
+
 export default function Filter(props) {
   const [toggle, setToggle] = useState(null);
 
@@ -28,11 +30,11 @@ export default function Filter(props) {
 
   return (
     <div id="filter-toggle-group" className='filter'>
-      <button onClick={toggleFilter} id="Relationships">Relationships</button>
-      <button onClick={toggleFilter} id="Work">Work</button>
-      <button onClick={toggleFilter} id="Problem-Solving">Problem-Solving</button>
-      <button onClick={toggleFilter} id="Health">Health</button>
-      <button onClick={toggleFilter} id="Reflections">Reflections</button>
+      <button className={btnClass} onClick={toggleFilter} id="Relationships">Relationships</button>
+      <button className={btnClass} onClick={toggleFilter} id="Work">Work</button>
+      <button className={btnClass} onClick={toggleFilter} id="Problem-Solving">Problem-Solving</button>
+      <button className={btnClass} onClick={toggleFilter} id="Health">Health</button>
+      <button className={btnClass} onClick={toggleFilter} id="Reflections">Reflections</button>
     </div>
   )
 }
@@ -41,7 +43,7 @@ function toggleStyles(id) {
   const group = document.getElementById('filter-toggle-group');
 
   for (let el of group.children) {
-    if (el.id === id) el.className = 'active';
-    else el.className = '';
+    if (el.id === id) el.className += ' active';
+    else el.className = btnClass;
   }
 }
