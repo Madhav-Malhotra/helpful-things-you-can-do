@@ -37,7 +37,9 @@ export const data = [
       "Work"
     ],
     "Detailed": "1. Specific - What EXACTLY needs to be done? Make a list of steps.\n2. Measurable - How will I know when I’m done? \n3. Achievable - Do I have enough resources for it? Have others done it before?\n4. Relevant - Does it suit my needs? Is it worthwile?\n5. Timely - When will I start? What’s the deadline?",
-    "Example": "Example: I’m not fit enough. What can I do to be fit? \n\n- Specific: I can jog around my neigbourhood.\n- Measurable: I can run for at least 10 minutes every day.\n- Achievable: Lots of people run every day. And I can start small: (just put on shoes on day one, just get out of house on day two, just go walk around the block on day three, and finally run on day four).\n- Relevant: Cardiovascular exercise isn’t too intense. So it’s a sustainable way to lose weight.\n- Timely: I’ll start tomorrow. And I’ll have gone on my first run in the next four days."
+    "Example": "Example: I’m not fit enough. What can I do to be fit? \n\n- Specific: I can jog around my neigbourhood.\n- Measurable: I can run for at least 10 minutes every day.\n- Achievable: Lots of people run every day. And I can start small: (just put on shoes on day one, just get out of house on day two, just go walk around the block on day three, and finally run on day four).\n- Relevant: Cardiovascular exercise isn’t too intense. So it’s a sustainable way to lose weight.\n- Timely: I’ll start tomorrow. And I’ll have gone on my first run in the next four days.",
+    "Rating": 5,
+    "ReviewNumber": 1
   },
   {
     "Name": "The 3 Ps",
@@ -107,7 +109,9 @@ export const data = [
       "Relationships"
     ],
     "Detailed": "1. Details - Compliment tiny details to show you really paid attention. \n2. Empathy - Compliment the intention they had. Ex: Contrast what they did with what someone with worse intentions would have. \n3. Future - Note how you’ll appreciate/look forward to them doing X again. So they'll repeat those actions in the future.",
-    "Example": "1. Details - I really appreciate you taking the time to link all the sources individually in the article! It’s so much easier to click through and double check the accuracy.\n2. Empathy - I know it can get boring to go through and format all the sources correctly, so I admire you keeping high standards here. Anyone else probably would’ve just added some sources at the end last-minute.\n3. Future - I’m really looking forward to seeing the final article published and the future articles you write!"
+    "Example": "1. Details - I really appreciate you taking the time to link all the sources individually in the article! It’s so much easier to click through and double check the accuracy.\n2. Empathy - I know it can get boring to go through and format all the sources correctly, so I admire you keeping high standards here. Anyone else probably would’ve just added some sources at the end last-minute.\n3. Future - I’m really looking forward to seeing the final article published and the future articles you write!",
+    "Rating": 4,
+    "ReviewNumber": 1
   },
   {
     "Name": "Inversion",

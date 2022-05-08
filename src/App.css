@@ -96,3 +96,7 @@ button.btn.btn-inverse:hover {
 button.btn.btn-inverse:focus {
   outline-width: 0;
 }
+
+div.tile {
+  border: solid white 1px;
+}
