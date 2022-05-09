@@ -17,7 +17,9 @@ export default function ExtraInfo(props) {
   return (
     <div className='extra-info'>
       {props.Example ? <>
-        <button onClick={toggleExample}>{!showExamples ? "Show example" : "Hide Example"}</button>
+        <button className='btn btn-inverse' onClick={toggleExample}>
+          {!showExamples ? "Show example" : "Hide Example"}
+        </button>
         {showExamples ? <p className='example'>{props.Example}</p> : null}
       </> : null}
 

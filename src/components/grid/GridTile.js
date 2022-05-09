@@ -6,10 +6,9 @@ import GridModal from './GridModal';
 export default function GridTile(props) {
   const {Name, Description, Tags, ReviewNumber, Rating, Detailed, Example, RelatedLinks} = props.data;
   const [showModal, setShowModal] = useState(false);
+  const ModalProps = {Detailed, Example, RelatedLinks, Description, setShowModal};
 
-  const clickHandler = () => {
-    setShowModal(true);
-  }
+  const clickHandler = () => setShowModal(true);
 
   return (
     <>
@@ -19,9 +18,7 @@ export default function GridTile(props) {
       <TagsComponent TagsData={Tags}/>
       <Review ReviewNumber={ReviewNumber} Rating={Rating} />
     </div>
-    {showModal ? 
-      <GridModal Detailed={Detailed} Example={Example} RelatedLinks={RelatedLinks} Description={Description}/> 
-      : null}
+    {showModal ? <GridModal {...ModalProps}/> : null}
     </>
   )
 }
