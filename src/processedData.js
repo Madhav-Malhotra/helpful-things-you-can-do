@@ -1,7 +1,7 @@
 export const data = [
   {
     "Name": "TWIG-H Questions",
-    "Description": "5 questions specifically to gain empathy",
+    "Description": "5 questions to gain empathy",
     "Tags": [
       "Relationships"
     ],
@@ -31,7 +31,7 @@ export const data = [
   },
   {
     "Name": "SMART Goals",
-    "Description": "How to make goals more realistic",
+    "Description": "Make goals more realistic",
     "Tags": [
       "Reflections",
       "Work"
@@ -54,7 +54,7 @@ export const data = [
   },
   {
     "Name": "CIA Reflections",
-    "Description": "Useful to reflect on lessons learned",
+    "Description": "Reflect on lessons learned",
     "Tags": [
       "Reflections"
     ],
@@ -71,7 +71,7 @@ export const data = [
   },
   {
     "Name": "Values via Vexation",
-    "Description": "Using irritations to find values",
+    "Description": "Use irritations to find values",
     "Tags": [
       "Reflections"
     ],
@@ -82,7 +82,7 @@ export const data = [
   },
   {
     "Name": "Infinite Goals",
-    "Description": "Which goals can you always fall back on?",
+    "Description": "Goals to fall back on",
     "Tags": [
       "Reflections",
       "Work"
@@ -104,7 +104,7 @@ export const data = [
   },
   {
     "Name": "DEF Thank Yous",
-    "Description": "How to thank others deeply",
+    "Description": "Thank others deeply",
     "Tags": [
       "Relationships"
     ],
@@ -139,7 +139,7 @@ export const data = [
   },
   {
     "Name": "Dictionary Brainstorming",
-    "Description": "To get unstuck/change directions",
+    "Description": "Get unstuck/change directions",
     "Tags": [
       "Problem-Solving",
       "Work"
@@ -151,7 +151,7 @@ export const data = [
   },
   {
     "Name": "Reduction",
-    "Description": "How to make hard problems simpler",
+    "Description": "Make hard problems simpler",
     "Tags": [
       "Problem-Solving",
       "Work"
@@ -163,7 +163,7 @@ export const data = [
   },
   {
     "Name": "Casuistry",
-    "Description": "When to follow old rules or make new ones",
+    "Description": "Follow old rules or make new ones?",
     "Tags": [
       "Problem-Solving"
     ],
@@ -174,7 +174,7 @@ export const data = [
   },
   {
     "Name": "Abstraction",
-    "Description": "Solve general problems for simplicity",
+    "Description": "Remove confusing details",
     "Tags": [
       "Problem-Solving"
     ],
@@ -191,7 +191,7 @@ export const data = [
   },
   {
     "Name": "Analogy",
-    "Description": "Solving problems with others' solutions",
+    "Description": "Copy others' solutions",
     "Tags": [
       "Problem-Solving"
     ],
@@ -231,7 +231,7 @@ export const data = [
   },
   {
     "Name": "Goldilocks Question",
-    "Description": "How to reduce perfectionism",
+    "Description": "Reduce perfectionism",
     "Tags": [
       "Reflections",
       "Work"
@@ -243,7 +243,7 @@ export const data = [
   },
   {
     "Name": "Prerequisites",
-    "Description": "Find neglected areas of work amidst hype",
+    "Description": "Find neglected areas of work",
     "Tags": [
       "Problem-Solving",
       "Work"
@@ -255,7 +255,7 @@ export const data = [
   },
   {
     "Name": "Gradient Descent",
-    "Description": "Solve problems with tiny iterations.",
+    "Description": "Solve problems iteratively",
     "Tags": [
       "Problem-Solving",
       "Work"
@@ -290,7 +290,7 @@ export const data = [
   },
   {
     "Name": "Empathy Stops",
-    "Description": "Better understand others in conversations",
+    "Description": "Better understand conversations",
     "Tags": [
       "Relationships"
     ],
@@ -299,60 +299,63 @@ export const data = [
     "ReviewNumber": 1
   },
   {
-    "Name": "Labelling - Name What you Heard",
-    "Description": "How to first respond to any idea.",
+    "Name": "Labelling",
+    "Description": "Better understand conversations",
     "Tags": [
       "Relationships"
     ],
-    "Detailed": "Q: How do we actually understand what someone *means?* Not just their literal words.\n\nA: We **label what we think we heard. As a question.**\n\n- **'It sounds like you’re saying [summary]?'**\n\nEither we’re right (so we better understand them). Or they correct us (so we better understand them). 🙃 \n\nThis is especially useful in negotiations or debates, so we know what to actually argue against.\n\nExample:\n\n- A: I’ve been having a lot of headaches after school.\n- B: It sounds like you’re tired after all the work?\n- A: No, I have gym last period and I feel dizzy in the heat.\n- B: So you’re physically struggling due to the heat?\n- A: Yeah, I guess so.\n- B: What are you currently trying to stay cool and hydrated?\n- A: ...",
+    "Detailed": "Say back to others what they said: 'It sounds like you’re saying [summary]?'\nEither we’re right (so we better understand them). Or they correct us (so we better understand them).",
+    "Example": "A: I’ve been having a lot of headaches after school.\n- B: It sounds like you’re tired after all the work?\n- A: No, I have gym last period and I feel dizzy in the heat.\n- B: Ah, you're getting headaches because it's too hot?\n- A: Yeah, I guess so.",
     "Rating": 5,
     "ReviewNumber": 1
   },
   {
-    "Name": "Grounding - Name Common Traits",
-    "Description": "How to increase cooperation.",
+    "Name": "Common Ground",
+    "Description": "Increase cooperation",
     "Tags": [
       "Relationships"
     ],
-    "Detailed": "When you find common traits with others, they cooperate with you more. \n\n- These could be hypothetical. Ex: **'I understand. If I were in your position, I’d also...'** This is is useful for de-escalating conflicts.\n- These could be real. Ex: **talk about common past experiences when meeting someone.** Like childhood hobbies, shared past employers/educational institutions/home cities, etc.\n\nExamples:\n\n- Someone is skeptical about my report. 'I understand. From an outside perspective, I’d also think the sample size was too low.'\n- Meeting a scientist at a conference. 'I think it’s really cool that you work with financial risk! When I was in high school, I did a report on the 2008 Financial Crisis too.'",
-    "Rating": 3,
-    "ReviewNumber": 1
-  },
-  {
-    "Name": "Stress Testing - How to Check Ideas",
-    "Description": "How to get more certainty about your ideas.",
-    "Tags": [
-      "Reflections"
-    ],
-    "Detailed": "When we realise we have no clue, we automatically question and double-check ideas. But **when we feel confident, we have to FORCE ourselves to double-check** our ideas.\n\n1. At regular intervals (like monthly), ask: **'What beliefs or ideas am I most confident in?'** Or do this after brainstorming for some specific problem. \n2. For each of those beliefs/ideas, *write* answers to questions like:\n    1. **What would it take to prove me wrong?**\n    2. **Who might change my perspective that I haven’t talked to?**\n    3. **What could be another explanation for this?**\n    4. **Which assumptions am I making that could be wrong?** Try explaining the idea to someone or write a memo explaining the idea. It might help to spot logical leaps.\n    5. **What am I overlooking?** \n    6. **Under which conditions would this no longer work?**\n\nExample - after brainstorming that [cross-subsidisation](https://en.wikipedia.org/wiki/Cross_subsidization) is the most scalable funding model for a mental health nonprofit in Uganda. \n\n- *What would it take to prove me wrong?* A case study of the difficulties in setting up nonprofit operations across two different regions could very easily deter me. That type of information is best obtained from people who’ve actually tried to do this in the target region (Uganda). Also, it might help to look at the economic possibilities - exactly how many subsidised-fee clients per high-fee client? And how many high-fee clients are feasible to reach?\n- *Who might change my perspective that I haven’t talked to?* A nonprofit COO that’s tried to implement nonprofit operations between a high-income and a low-income area. Or a researcher or other scientist who’s tried to adapt mental health curriculum across many different regions.\n- *Which assumptions am I making that could be wrong?* It’s not prohibitively expensive to set up *physical* nonprofit operations in multiple regions, where one has a lack of connectivity. High-fee clients will be willing to pay, even if they find out that their fees are being used to subsidise other clients. The most important barriers to scaling a nonprofit funding model are the variable, per-client costs.",
+    "Detailed": "Name common traits with others to increase cooperation. \n- Ex: In conflicts: 'I understand. If I were in your position, I’d also...'\n- Ex: mention common past experiences when meeting someone. Like childhood hobbies, shared past employers/schools/home cities, etc.",
+    "Example": "Ex: Someone is skeptical about my report. 'I understand. From an outside perspective, I’d also think the sample size was too low.'\n- Ex: Meeting a scientist at a conference. 'It's cool that you study financial risk! When I was in high school, I did a report on the 2008 Financial Crisis too.'",
     "Rating": 4,
     "ReviewNumber": 1
   },
   {
-    "Name": "Thought Appraisal - Facing Hard Thoughts",
-    "Description": "How to limit harmful overthinking.",
+    "Name": "Stress Testing",
+    "Description": "Double-check your ideas",
+    "Tags": [
+      "Reflections"
+    ],
+    "Detailed": "1. At regular times (ex: monthly), ask: 'What beliefs or ideas am I most confident in?' Or do this after brainstorming for some specific problem. \n2. For each belief/idea, *write* answers to questions like: 'What would it take to prove me wrong? Who might change my perspective that I haven’t talked to? What could be another explanation? Which assumptions am I making? What am I overlooking? Under which conditions would this no longer work?'\n 3. Explain the idea to someone or write a memo to do so.",
+    "Example": "I brainstorm that cross-subsidisation is the most scalable funding model for a mental health nonprofit in Uganda. \n- What would it take to prove me wrong? A case study of the difficulties in setting up nonprofit operations across two different regions. I should talk to people who’ve actually tried this in Uganda. Also, it might help to run calculations - exactly how many subsidised-fee clients per full-fee client? And how many high-fee clients are reachable?\n- Which assumptions am I making? I assume it’s not too expensive to set up *physical* nonprofit operations in multiple developing countries. And I assume full-fee clients will be willing to pay, even if their fees subsidise other clients.",
+    "Rating": 4,
+    "ReviewNumber": 1
+  },
+  {
+    "Name": "Thought Appraisal",
+    "Description": "Stop harmful overthinking",
     "Tags": [
       "Health",
       "Reflections"
     ],
-    "Detailed": "WRITE down thoughts on each step:\n\n1. **Identify** the troubling thought you had. Especially write down any problems that brought about the thought. And what you ‘said’ in your head as a result.\n2. **Categorise** any ‘negative fallacies’ in the thought. Negative fallacies are common mistakes in thinking. For example:\n    - Negative filtering - focusing on the bad side of every situation.\n    - Negative predictions - thinking things will stay bad or get worse, expecting to fail.\n    - Catastrophising - jumping to the worst conclusion\n    - Mind reading - thinking others don’t like you, even when I don’t have proof.\n    - Personalisation - feeling guilty for things that aren’t in your control\n    - All or nothing - thinking in black and white extremes. No in between. Ex: ‘They must message me or else they don’t care about me.’\n    - Overgeneralisation - thinking one example of a bad thing shows how everything always goes wrong.\n- **Challenge** the thought with these questions:\n    - What am I overlooking?\n    - What could be another explanation?\n    - What would someone else say?\n    - What proof do I have this is true?\n    - What might be a more helpful way to look at this situation?",
+    "Detailed": "WRITE down thoughts on each step:\n1. Write the troubling thought you had and the situation you were in. \n2. Categorise common mistakes in the thought. Ex: Negative filtering - focusing on the bad side of every situation. Ex: Negative predictions - thinking things always stay bad or get worse. Ex: Mind reading - thinking others don’t like you, even without proof. Ex: Personalisation - feeling guilty for things that aren’t in your control. Ex: All or nothing - thinking in black and white extremes. No in between. Ex: Overgeneralisation - one example of a bad thing shows how everything always goes wrong.\n3. Challenge the thought with questions like: 'What am I overlooking? What could be another explanation? What would someone else say? What proof do I have this is true? What might be a more helpful way to look at this situation?'",
     "Rating": 5,
     "ReviewNumber": 1
   },
   {
-    "Name": "Alien Reflection - Think More Objectively",
-    "Description": "How to look at problems from a third-party lens.",
+    "Name": "Alien Reflection",
+    "Description": "View problems objectively",
     "Tags": [
       "Problem-Solving",
       "Reflections"
     ],
-    "Detailed": "\nThis is a thought experiment for thinking more objectively. Often, it’s helpful when you’re judging yourself excessively.\n\n- Imagine there’s an alien on a planet like ours. **The alien has the EXACT same problems you’re facing.** STOP to think about their thoughts, their conversations, their actions - all of which are like yours.\n- **What advice would you give to this alien who’s in the same situation as you?**\n\n*Note: if it’s too hard/abstract to visualise an alien, imagine you had a friend who had the exact same problems as you.",
+    "Detailed": "Imagine an alien on a planet just like ours. The alien has the EXACT same problems you’re facing.\n*STOP to think* about their thoughts, their conversations, their actions - which are just like yours.\n What advice would you give to this alien who’s in the same situation as you?\nOften helpful when you’re judging yourself too much.\n*Note: if it’s too hard to visualise an alien, imagine you had a friend who had the exact same problems as you.",
     "Rating": 4,
     "ReviewNumber": 1
   },
   {
     "Name": "Context Resets",
-    "Description": "How to get unstuck with breaks.",
+    "Description": "Get unstuck with breaks",
     "Tags": [ "Work" ],
     "Detailed": "Stuck on a problem? Change your environment! It's easier to remember the solution.",
     "Example": "After 45 minutes of fixing a coding bug, stop. Go for a 5 minute walk outside.",

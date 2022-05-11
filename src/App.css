@@ -126,6 +126,7 @@ div.tile-modal {
   background-color: #080808;
   border: solid white 1px;
   padding: 0 20px 20px 20px;
+  white-space: pre-line;
 }
 
 div.tile-modal > img.close {
