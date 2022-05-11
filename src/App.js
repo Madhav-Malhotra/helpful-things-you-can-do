@@ -1,17 +1,18 @@
-import React, { useState } from "react";
-import Filter from "./components/flip/Filter";
+import React, { useState, useEffect } from "react";
+import FilterLogic from "./components/flip/FilterLogic";
 import GridView from "./components/grid/GridView";
 import Navbar from "./components/grid/Navbar";
-import { data } from "./processedData.js";
+import { getAllData } from "./firebaseInit.js";
 
 function App() {
-  const [ tips, setTips ] = useState(data);
+  const [ tips, setTips ] = useState();
+  const data = getAllData(setTips);
 
   return (
     <div className="App">
       <Navbar />
-      <Filter data={data} setTips={setTips}/>
-      <GridView tips={tips} />
+      <FilterLogic data={data} setTips={setTips}/>
+      {tips ? <GridView tips={tips} /> : null}
     </div>
   );
 }

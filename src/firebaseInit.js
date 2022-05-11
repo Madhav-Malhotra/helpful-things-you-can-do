@@ -1,7 +1,6 @@
 // ================ INIT ================= //
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, collection, query, getDocs } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCwlY9XjIsCs8gsRc77ihPPFAiEZxBWj9A",
@@ -15,5 +14,17 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 export const db = getFirestore();
+
+// Initialise data - DO NOT LEAVE THIS IN IF PEOPLE ARE ABLE TO ADD TIPS THEMSELVES
+export async function getAllData(setState) {
+  let data = [];
+  const q = query(collection(db, "tips"));
+  const res = await getDocs(q);
+
+  res.forEach((doc) => {
+    data.push({id: doc.id, ...doc.data()});
+  });
+  setState(data);
+  return data;
+}

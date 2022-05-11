@@ -1,30 +1,16 @@
-import React, { useState } from 'react'
+import React from 'react';
 
 const btnClass = "btn btn-inverse";
 
-export default function Filter(props) {
-  const [toggle, setToggle] = useState(null);
-
+export default function Filter({ toggle, setToggle }) {
   const toggleFilter = (e) => {
     const newToggle = e.target.id;
 
     // Disable toggle
     if (toggle && newToggle === toggle) {
-      setToggle(null);
-      props.setTips(props.data);
-      toggleStyles('');
-    }
-    else {
+      setToggle(null); toggleStyles('');
+    } else {
       setToggle(newToggle); toggleStyles(newToggle);
-
-      let selectedCards = [];
-      // Change selected cards
-      for (let tip of props.data) {
-        if (tip.Tags.includes(newToggle)) {
-          selectedCards.push(tip);
-        }
-      }
-      props.setTips(selectedCards);
     }
   };
 
