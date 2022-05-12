@@ -27,3 +27,8 @@ export async function getAllData(setState) {
   });
   setState(data);
 }
+
+// Submit review 
+export async function submitReview() {
+
+}

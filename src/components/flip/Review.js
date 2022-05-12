@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { submitReview } from "../../firebaseInit.js" ;
 
 export default function Review(props) {
   let content;
+  const [ ratingLeft, setRatingLeft ] = useState();
 
-  if (props.ReviewNumber) {
-    if (props.Mode === 'write') {
-      content = null;
-    } else {
-      content = (<p>User rating: {props.Rating}/5 ({props.ReviewNumber})</p>);
-    }
+  const handleInput = (e) => {
+    const val = e.target.value;
+    if (val >= 1 && val <= 5) setRatingLeft(val);
+  } 
+
+  if (props.Mode === 'Write') {
+    content = <div className='leave-review'>
+      <input type="number" min="1" max="5" step="1" placeholder='1 (low) - 5 (high)'
+      onChange={handleInput} />
+      <button className='btn btn-inverse' onClick={submitReview}>Submit</button>
+    </div>;
+  } else {
+    content = (<p>User rating: {props.Rating}/5 ({props.ReviewNumber})</p>);
   }
 
   return (

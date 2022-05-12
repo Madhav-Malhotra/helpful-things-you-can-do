@@ -159,3 +159,17 @@ p.loading {
   font-size: large;
   text-align: center;
 }
+
+div.leave-review {
+  margin-top: 25px;
+}
+
+div.leave-review > input[type="number"] {
+  margin-right: 25px;
+  background-color: rgba(0,0,0,0);
+  outline-width: 0;
+  border: none;
+  border-bottom: solid white 2px;
+  color: white;
+  width: 150px;
+}
