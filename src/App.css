@@ -153,3 +153,9 @@ a:hover {
   color: white !important;
   opacity: 1;
 }
+
+p.loading {
+  margin-top: 6em;
+  font-size: large;
+  text-align: center;
+}

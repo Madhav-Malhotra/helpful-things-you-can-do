@@ -6,12 +6,15 @@ import { getAllData } from "./firebaseInit.js";
 
 function App() {
   const [ tips, setTips ] = useState();
-  const data = getAllData(setTips);
+  const [ data, setData ] = useState();
+  
+  useEffect(() => getAllData(setData), []); // Get permanent data first time
+  useEffect(() => setTips(data), [data]); // If perm data changes, update local
 
   return (
     <div className="App">
       <Navbar />
-      <FilterLogic data={data} setTips={setTips}/>
+      {data ? <FilterLogic data={data} setTips={setTips}/> : <p className="loading">Loading...</p>}
       {tips ? <GridView tips={tips} /> : null}
     </div>
   );

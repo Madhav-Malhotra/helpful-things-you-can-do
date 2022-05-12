@@ -26,5 +26,4 @@ export async function getAllData(setState) {
     data.push({id: doc.id, ...doc.data()});
   });
   setState(data);
-  return data;
 }
