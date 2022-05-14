@@ -1,6 +1,6 @@
 // ================ INIT ================= //
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, query, getDocs } from "firebase/firestore";
+import { getFirestore, collection, query, getDocs, doc, updateDoc } from "firebase/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCwlY9XjIsCs8gsRc77ihPPFAiEZxBWj9A",
@@ -29,6 +29,13 @@ export async function getAllData(setState) {
 }
 
 // Submit review 
-export async function submitReview() {
-
+export async function submitReview(rating, id, prevRating, reviewNumber) {
+  const docRef = doc(db, "tips", id);
+  const newReviewNumber = reviewNumber + 1;
+  const newRating = (parseInt(rating) + parseInt(prevRating)) / newReviewNumber;
+  
+  await updateDoc(docRef, {
+    Rating: newRating,
+    ReviewNumber: newReviewNumber
+  });
 }

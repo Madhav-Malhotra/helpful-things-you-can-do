@@ -33,7 +33,7 @@ export default function ExtraInfo(props) {
 
       {/* Show examples or Rating */}
       {showExamples ? <p className='example'>{props.Example}</p> : null}
-      {showReview ? <Review Mode={'Write'}/> : null}
+      {showReview ? <Review Mode={'Write'} idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null}
 
       {links ? <p>Related Info</p> : null}
       {links}
