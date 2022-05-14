@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import FilterLogic from "./components/flip/FilterLogic";
 import GridView from "./components/grid/GridView";
 import Navbar from "./components/grid/Navbar";
-import { getAllData } from "./firebaseInit.js";
+import { getAllData } from "./firebaseFunctions.js";
 
 function App() {
   const [ tips, setTips ] = useState();

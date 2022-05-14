@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { submitReview } from "../../firebaseInit.js" ;
+import { submitReview } from "../../firebaseFunctions.js" ;
 
 export default function Review(props) {
   let content;
