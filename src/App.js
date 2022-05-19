@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import FilterLogic from "./components/flip/FilterLogic";
+import FilterLogic from "./components/functional/FilterLogic";
 import GridView from "./components/grid/GridView";
-import Navbar from "./components/grid/Navbar";
+import Navbar from "./components/Navbar";
 import { getAllData } from "./firebaseFunctions.js";
 
 function App() {

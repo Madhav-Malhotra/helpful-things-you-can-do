@@ -1,5 +1,6 @@
 import { collection, query, getDocs, doc, updateDoc } from "firebase/firestore";
-import { db } from "./firebaseInit.js";
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { db, auth } from "./firebaseInit.js";
 
 // Initialise data - DO NOT LEAVE THIS IN IF PEOPLE ARE ABLE TO ADD TIPS THEMSELVES
 export async function getAllData(setState) {
@@ -23,4 +24,13 @@ export async function submitReview(rating, id, prevRating, reviewNumber) {
     Rating: newRating,
     ReviewNumber: newReviewNumber
   });
+}
+
+// Authentication
+const provider = new GoogleAuthProvider();
+export async function verifyUser() {
+  signInWithPopup(auth, provider)
+  .then((result) => {
+    console.log(result.user);
+  }).catch((error) => console.error(error.code, error.message));
 }

@@ -1,5 +1,5 @@
 import React from 'react'
-import ExtraInfo from '../flip/ExtraInfo';
+import ExtraInfo from '../functional/ExtraInfo';
 
 export default function GridModal(props) {  
   return (

@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Review from './Review';
+import ReviewWrite from './ReviewWrite.js';
 
 export default function ExtraInfo(props) {
   const [showExamples, setShowExamples] = useState(false);
@@ -28,12 +28,12 @@ export default function ExtraInfo(props) {
 
       {/* Leave Rating button */}
       <button className='btn btn-inverse' onClick={toggleRating}>
-        {!showReview ? "Give Rating" : "Hide Rating"}
+        {!showReview ? "Sign In to Give Rating" : "Hide Rating"}
       </button>
 
       {/* Show examples or Rating */}
       {showExamples ? <p className='example'>{props.Example}</p> : null}
-      {showReview ? <Review Mode={'Write'} idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null}
+      {showReview ? <ReviewWrite idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null}
 
       {links ? <p>Related Info</p> : null}
       {links}

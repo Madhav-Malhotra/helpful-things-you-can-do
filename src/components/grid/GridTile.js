@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Review from '../flip/Review';
-import TagsComponent from '../flip/Tags';
+import ReviewRead from '../functional/ReviewRead.js';
+import TagsComponent from '../Tags';
 import GridModal from './GridModal';
 
 export default function GridTile(props) {
@@ -16,7 +16,7 @@ export default function GridTile(props) {
       <h1>{Name}</h1>
       <h3>{Description}</h3>
       <TagsComponent TagsData={Tags}/>
-      <Review ReviewNumber={ReviewNumber} Rating={Rating} />
+      <ReviewRead ReviewNumber={ReviewNumber} Rating={Rating} />
     </div>
     {showModal ? <GridModal {...ModalProps}/> : null}
     </>
