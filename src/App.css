@@ -129,7 +129,7 @@ div.tile-modal {
   white-space: pre-line;
 }
 
-div.tile-modal > img.close {
+div.tile-modal > img.close-modal-button {
   position: absolute;
   top: 5px;
   right: 5px;
@@ -139,7 +139,7 @@ div.tile-modal > img.close {
   filter: brightness(0.8);
 }
 
-div.tile-modal > img.close:hover {
+div.tile-modal > img.close-modal-button:hover {
   filter: brightness(1);
 }
 

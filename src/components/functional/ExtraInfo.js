@@ -26,14 +26,14 @@ export default function ExtraInfo(props) {
         </button>
       : null}
 
-      {/* Leave Rating button */}
+      {/* Leave Rating button
       <button className='btn btn-inverse' onClick={toggleRating}>
         {!showReview ? "Sign In to Give Rating" : "Hide Rating"}
-      </button>
+      </button> */}
 
       {/* Show examples or Rating */}
       {showExamples ? <p className='example'>{props.Example}</p> : null}
-      {showReview ? <ReviewWrite idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null}
+      {/* {showReview ? <ReviewWrite idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null} */}
 
       {links ? <p>Related Info</p> : null}
       {links}
