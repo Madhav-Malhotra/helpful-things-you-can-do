@@ -4,7 +4,6 @@ import TagsComponent from '../Tags';
 
 export default function GridTile(props) {
   const {Name, Description, Tags, ReviewNumber, Rating, id} = props.data;
-
   const onTileClick = (e) => props.setModalID(e.currentTarget.id);
 
   return (
