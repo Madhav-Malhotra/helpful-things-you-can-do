@@ -53,9 +53,12 @@ div.tile-modal {
   position: fixed;
   max-width: 720px;
   width: 90%;
+  top: 12vh;
   left: 0;
   right: 0;
   margin: 0 auto;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 /* ================ STYLING =============== */
@@ -63,6 +66,8 @@ div.tile-modal {
 html, body, div.App {
   background-color: #222 !important;
   color: white;
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 15px;
 }
 
 div.Card {
@@ -176,4 +181,8 @@ div.leave-review > input[type="number"] {
   border-bottom: solid white 2px;
   color: white;
   width: 150px;
+}
+
+:root {
+  color-scheme: dark;
 }
