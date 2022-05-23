@@ -20,6 +20,9 @@ export default function FilterLogic(props) {
   }, [toggle, props.setTips]);
 
   return (
-    <Filter toggle={toggle} setToggle={setToggle} />
+    <div className='filter-area'>
+      <p>Click a button to find tips in that category. Click a tip to get more details.</p>
+      <Filter toggle={toggle} setToggle={setToggle} />
+    </div>
   )
 }

@@ -38,15 +38,19 @@ div.Flip img.arrow {
   transition: 0.6s;
 }
 
-div.filter {
-  display: flex;
+div.filter-area {
   margin: 8em 0 0 0;
+  text-align: center;
+}
+
+div.filter-toggle-group {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 div.tile-modal {
-  position: absolute;
+  position: fixed;
   max-width: 720px;
   width: 90%;
   left: 0;
@@ -85,7 +89,7 @@ div.extra-info p {
   margin-bottom: 0;
 }
 
-div.filter button.active {
+div.filter-toggle-group button.active {
   color: #080808;
   background-color: white;
 }

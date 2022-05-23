@@ -15,9 +15,9 @@ export default function Filter({ toggle, setToggle }) {
   };
 
   return (
-    <div id="filter-toggle-group" className='filter'>
+    <div id="filter-toggle-group" className='filter-toggle-group'>
       <button className={btnClass} onClick={toggleFilter} id="Relationships">Relationships</button>
-      <button className={btnClass} onClick={toggleFilter} id="Work">Work</button>
+      <button className={btnClass} onClick={toggleFilter} id="Productivity">Productivity</button>
       <button className={btnClass} onClick={toggleFilter} id="Problem-Solving">Problem-Solving</button>
       <button className={btnClass} onClick={toggleFilter} id="Health">Health</button>
       <button className={btnClass} onClick={toggleFilter} id="Reflections">Reflections</button>
