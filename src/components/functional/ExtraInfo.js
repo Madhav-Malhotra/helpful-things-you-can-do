@@ -32,7 +32,7 @@ export default function ExtraInfo(props) {
       </button> */}
 
       {/* Show examples or Rating */}
-      {showExamples ? <p className='example'>{props.Example}</p> : null}
+      {showExamples ? <p className='example'>{props.Example.replaceAll("\\n","\n")}</p> : null}
       {/* {showReview ? <ReviewWrite idProp={props.idProp} Rating={props.Rating} ReviewNumber={props.ReviewNumber}/> : null} */}
 
       {links ? <p>Related Info</p> : null}
