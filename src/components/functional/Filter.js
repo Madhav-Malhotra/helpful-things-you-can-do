@@ -6,7 +6,7 @@ const btnClass = "btn btn-inverse";
 export default function Filter({ toggle, setToggle }) {
   const nav = useNavigate();
 
-  if (toggle === null) toggleStyles(''); 
+  if (toggle === null && document.getElementById('filter-toggle-group')) toggleStyles(''); 
 
   const toggleFilter = (e) => {
     const newToggle = e.target.id;
