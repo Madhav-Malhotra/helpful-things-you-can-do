@@ -6,7 +6,11 @@ const btnClass = "btn btn-inverse";
 export default function Filter({ toggle, setToggle }) {
   const nav = useNavigate();
 
-  if (toggle === null && document.getElementById('filter-toggle-group')) toggleStyles(''); 
+  const group = document.getElementById('filter-toggle-group');
+  if (group) {
+    if (toggle === null && group) toggleStyles('', group); 
+    else toggleStyles(toggle, group);
+  }
 
   const toggleFilter = (e) => {
     const newToggle = e.target.id;
@@ -15,8 +19,7 @@ export default function Filter({ toggle, setToggle }) {
     if (toggle && newToggle === toggle) {
       setToggle(null); nav("/");
     } else {
-      setToggle(newToggle); toggleStyles(newToggle);
-      nav(`/tags/${newToggle}`);
+      setToggle(newToggle); nav(`/tags/${newToggle}`);
     }    
   };
 
@@ -31,9 +34,7 @@ export default function Filter({ toggle, setToggle }) {
   )
 }
 
-function toggleStyles(id) {
-  const group = document.getElementById('filter-toggle-group');
-
+function toggleStyles(id, group) {
   for (let el of group.children) {
     if (el.id === id) el.className += ' active';
     else el.className = btnClass;
