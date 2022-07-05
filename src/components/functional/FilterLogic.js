@@ -1,23 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import Filter from './Filter';
+import { getAllData } from "../../firebaseFunctions.js";
 
 export default function FilterLogic(props) {
   const [toggle, setToggle] = useState(null);
 
   useEffect(() => {
-    // If no toggles show all
-    if (toggle === null) props.setTips(props.data);
-    else { 
-      let selectedCards = [];
-      // Change selected tips
-      for (let tip of props.data) {
-        if (tip.Tags.includes(toggle)) {
-          selectedCards.push(tip);
-        }
-      }
-      props.setTips(selectedCards);
+    // If no toggles, wait for user to select a toggle
+    if (toggle === null) props.setCurrent(null);
+    else {
+      // If toggle selected, download data for that toggle.
+      getAllData(props.setData, props.data, props.setCurrent, props.setLoad, toggle)
     }
-  }, [toggle, props.setTips]);
+  }, [toggle]);
 
   return (
     <div className='filter-area'>

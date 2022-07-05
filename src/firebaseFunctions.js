@@ -1,17 +1,29 @@
-import { collection, query, getDocs, doc, updateDoc } from "firebase/firestore";
+import { collection, query, getDocs, doc, updateDoc, where } from "firebase/firestore";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { db, auth } from "./firebaseInit.js";
 
 // Initialise data - DO NOT LEAVE THIS IN IF PEOPLE ARE ABLE TO ADD TIPS THEMSELVES
-export async function getAllData(setState) {
+export async function getAllData(setData, prevData, setCurrent, setLoad, category) {
   let data = [];
-  const q = query(collection(db, "tips"));
-  const res = await getDocs(q);
+  if (prevData[category]) data = prevData[category];
+  else {
+    const c = collection(db, "tips");
+    const q = query(c, where("Tags", "array-contains", category));
+    setLoad(true);
+    const res = await getDocs(q);
 
-  res.forEach((doc) => {
-    data.push({id: doc.id, ...doc.data()});
-  });
-  setState(data);
+    res.forEach((doc) => {
+      data.push({id: doc.id, ...doc.data()});
+    });
+
+    setData((prev) => {
+      let newState = JSON.parse(JSON.stringify(prev));
+      newState[`${category}`] = data;
+      return newState;
+    });
+    setLoad(false);
+  }
+  setCurrent(data);
 }
 
 // Submit review 

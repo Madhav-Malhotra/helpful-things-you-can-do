@@ -1,21 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import FilterLogic from "./components/functional/FilterLogic";
 import GridView from "./components/grid/GridView";
 import Navbar from "./components/Navbar";
-import { getAllData } from "./firebaseFunctions.js";
 
 function App() {
-  const [ tips, setTips ] = useState();
-  const [ data, setData ] = useState();
-  
-  useEffect(() => getAllData(setData), []); // Get permanent data first time
-  useEffect(() => setTips(data), [data]); // If perm data changes, update local
+  const [ current, setCurrent ] = useState();
+  const [ data, setData ] = useState({});
+  const [load, setLoad] = useState(false);
 
   return (
     <div className="App">
       <Navbar />
-      {data ? <FilterLogic data={data} setTips={setTips}/> : <p className="loading">Loading...</p>}
-      {tips ? <GridView tips={tips} /> : null}
+      <FilterLogic data={data} setData={setData} setCurrent={setCurrent} setLoad={setLoad}/>
+      {load ? <p className="loading">Loading...</p> : null}
+      {current ? <GridView tips={current} /> : null}
     </div>
   );
 }
