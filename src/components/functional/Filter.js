@@ -1,17 +1,22 @@
 import React from 'react';
+import { useNavigate } from "react-router-dom";
 
 const btnClass = "btn btn-inverse";
 
 export default function Filter({ toggle, setToggle }) {
+  const nav = useNavigate();
+
   const toggleFilter = (e) => {
     const newToggle = e.target.id;
 
     // Disable toggle
     if (toggle && newToggle === toggle) {
-      setToggle(null); toggleStyles('');
+      setToggle(null); toggleStyles(''); 
+      nav("/");
     } else {
       setToggle(newToggle); toggleStyles(newToggle);
-    }
+      nav(`/tags/${newToggle}`);
+    }    
   };
 
   return (
