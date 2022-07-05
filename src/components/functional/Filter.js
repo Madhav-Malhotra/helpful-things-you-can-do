@@ -6,13 +6,14 @@ const btnClass = "btn btn-inverse";
 export default function Filter({ toggle, setToggle }) {
   const nav = useNavigate();
 
+  if (toggle === null) toggleStyles(''); 
+
   const toggleFilter = (e) => {
     const newToggle = e.target.id;
 
     // Disable toggle
     if (toggle && newToggle === toggle) {
-      setToggle(null); toggleStyles(''); 
-      nav("/");
+      setToggle(null); nav("/");
     } else {
       setToggle(newToggle); toggleStyles(newToggle);
       nav(`/tags/${newToggle}`);

@@ -18,7 +18,8 @@ export default function FilterLogic(props) {
 
   useEffect(() => {
     let p = location.pathname;
-    if (p.includes("/tags/")) {
+    if (p === "/") setToggle(null);
+    else if (p.includes("/tags/")) {
       let split = p.split("/")
       setToggle(split[split.length - 1]);
     }
