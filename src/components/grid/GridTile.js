@@ -1,10 +1,16 @@
 import React from 'react';
 import ReviewRead from '../functional/ReviewRead.js';
 import TagsComponent from '../Tags';
+import { useSearchParams } from "react-router-dom";
 
 export default function GridTile(props) {
   const {Name, Description, Tags, ReviewNumber, Rating, id} = props.data;
-  const onTileClick = (e) => props.setModalID(e.currentTarget.id);
+  const setSearch = useSearchParams()[1];
+
+  const onTileClick = (e) => {
+    props.setModalID(e.currentTarget.id)
+    setSearch({id: e.currentTarget.id})
+  };
 
   return (
     <>

@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import GridTile from './GridTile';
 import GridModal from './GridModal';
+import { useSearchParams } from 'react-router-dom';
 
 export default function GridView(props) {
   const [modalID, setModalID] = useState(null);
+  const search = useSearchParams()[0];
+
+  useEffect(() => {
+    const id = search.get("id")
+    if (id && modalID != id) setModalID(id);
+  }, [search])
 
   // Show all tiles
   let tiles = [];
