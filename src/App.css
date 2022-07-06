@@ -3,15 +3,6 @@ div.row.grid-view {
   margin: 5em 15px;
 }
 
-div.Flip.row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  max-width: 720px;
-  margin: 0 auto;
-  width: 100%;
-}
-
 div.info-holder {
   width: 100%;
 }
@@ -28,14 +19,6 @@ div.Card {
 
 div.Card h1 {
   margin-top: 0;
-}
-
-div.Flip img.arrow {
-  max-width: 45px;
-  max-height: 45px;
-  padding: 0 10px;
-  opacity: 0.6;
-  transition: 0.6s;
 }
 
 div.filter-area {
@@ -61,6 +44,18 @@ div.tile-modal {
   overflow-y: auto;
 }
 
+div.share-link {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+div.tile-modal > div.modal-toolbar {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
 /* ================ STYLING =============== */
 
 html, body, div.App {
@@ -78,11 +73,6 @@ div.Card {
 
 div.Card p.detail, div.extra-info p.example {
   white-space: pre-line;
-}
-
-div.Flip img.arrow:hover {
-  opacity: 1;
-  cursor: pointer;
 }
 
 div.extra-info li {
@@ -138,17 +128,19 @@ div.tile-modal {
   white-space: pre-line;
 }
 
-div.tile-modal > img.close-modal-button {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+div.tile-modal > div.modal-toolbar > img {
   width: 32px;
   cursor: pointer;
   transition: 0.3s;
   filter: brightness(0.8);
 }
 
-div.tile-modal > img.close-modal-button:hover {
+div.tile-modal > div.modal-toolbar > img.copy-modal-button {
+  width: 25px;
+  margin-right: 8px;
+}
+
+div.tile-modal >  div.modal-toolbar > img:hover {
   filter: brightness(1);
 }
 
@@ -185,4 +177,19 @@ div.leave-review > input[type="number"] {
 
 :root {
   color-scheme: dark;
+}
+
+div.share-link img.copy-url {
+  width: 25px;
+}
+
+div.share-link > button {
+  background-color: rgba(0,0,0,0);
+  border-width: 0;
+  filter: brightness(0.7);
+  transition: 0.3s;
+}
+
+div.share-link > button:hover {
+  filter: brightness(1);
 }

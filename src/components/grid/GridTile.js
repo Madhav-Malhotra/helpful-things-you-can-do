@@ -14,7 +14,7 @@ export default function GridTile(props) {
 
   return (
     <>
-    <div className='col-sm-12 col-md-6 col-lg-4 tile' key={id} id={id} onClick={onTileClick}>
+    <div className='col-sm-12 col-md-6 col-lg-4 tile' title="Show details" key={id} id={id} onClick={onTileClick}>
       <h1>{Name}</h1>
       <h3>{Description}</h3>
       <TagsComponent TagsData={Tags}/>
